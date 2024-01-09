@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма пациента</title>
+    <link rel="stylesheet" href="style.css">nk
+    <script src="./script.js"></script>
+</head>
+
+<body>
+
+    <h2>Форма пациента</h2>
+
+    <form id="patientForm">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" required>
+
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" required>
+
+        <label for="date">Дата рождения:</label>
+        <input type="date" id="dob" required>
+
+        <label for="phoneNumber">Телефонный номер:</label>
+        <input type="tel" id="phoneNumber" required>
+
+        <button type="button" onclick="addPatient()">Добавить пациента</button>
+    </form>
+
+    <div id="patientList">
+        <h2>Список пациентов</h2>
+        <button type="button" onclick="showPatients()">Показать всех пациентов</button>
+    </div>
+
+
+
+</body>
+
+</html>
